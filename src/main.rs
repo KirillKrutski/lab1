@@ -8,7 +8,7 @@ fn main() {
     
 let dote1: u32 = match dote1.trim().parse(){
     Ok(num) => num,
-    Err(_) => continue,
+    Err(_) => panic!("error"),
 };
 
 
@@ -21,9 +21,9 @@ let dote1: u32 = match dote1.trim().parse(){
         .expect("Failed to read line");
 
         
-    let dote1: u32 = match dote1.trim().parse(){
+    let dote2: u32 = match dote2.trim().parse(){
             Ok(num) => num,
-            Err(_) => continue,
+            Err(_) => panic!("error"),
     };
 
     println!("Dote2 {dote2}");
